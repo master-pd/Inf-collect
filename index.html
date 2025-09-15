@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Consent (If collect)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Consent — if collect    
+    </h1>
+    <p class="small">Click allowe to continue  <strong>Allow</strong> click Now</p>
+
+    <label for="name">Name (optional)</label>
+    <input id="name" type="text" placeholder="Your full name"/>
+
+    <label for="email">Email (optional)</label>
+    <input id="email" type="email" placeholder="you@example.com"/>
+
+    <div style="margin-top:12px">
+      <button id="openPerm" class="btn">Show permissions</button>
+      <button id="prepare" class="ghost" style="display:none">Collect / Prepare</button>
+    </div>
+
+    <h3 style="margin-top:16px">Preview</h3>
+    <pre id="result">(no data yet)</pre>
+    <p class="muted" style="margin-top:12px">Privacy note: This file is a tools please safe your data 
+      need check please</p>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="modalWrap" class="modal-back" style="display:none" role="dialog" aria-modal="true">
+  <div class="modal" role="document">
+    <h2>Allow app to access:</h2>
+    <p class="muted"> </p></p>
+
+    <div class="perm-list">
+      <div class="perm-item">
+        <div>
+          <div class="perm-name">Basic device info</div>
+          <div class="muted" style="font-size:0.86rem">Browser, language, screen size, timezone</div>
+        </div>
+        <div>
+          <button class="perm-btn ghost" data-key="device">Allow</button>
+        </div>
+      </div>
+
+      <div class="perm-item">
+        <div>
+          <div class="perm-name">Location </div>
+          <div class="muted" style="font-size:0.86rem"> </div>
+        </div>
+        <div>
+          <button class="perm-btn ghost" data-key="geo">Allow</button>
+        </div>
+      </div>
+
+      <div class="perm-item">
+        <div>
+          <div class="perm-name"> contact</div>
+          <div class="muted" style="font-size:0.86rem"> </div>
+        </div>
+        <div>
+          <button class="perm-btn ghost" data-key="phone">Allow</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:8px;justify-content:flex-end">
+      <button id="denyAll" class="ghost">Done</button>
+      <button id="done" class="btn">Next</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
