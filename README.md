@@ -16,3 +16,18 @@ Everything is client-side. Nothing is sent to any server by default.
 4. `chmod +x run-termux.sh`
 5. `./run-termux.sh`
 6. Open `http://localhost:8080` in the device browser.
+
+## installation (termux)
+
+`pkg update && pkg install python -y
+pkg install git -y`
+` cd ~
+git clone https://github.com/master-pd/Inf-collect.git
+cd Inf-collect `
+## step 2 
+
+`chmod +x run-termux.sh`
+`./run-termux.sh`
+
+## open the browsers 
+example `http://localhost:8080`
